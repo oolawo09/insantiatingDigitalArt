@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% autoescape %}
+
+<html>
+    <head>
+    <title>
+        </title>
+        </head>
+	   {% for trend in trends %}
+		  <body> 
+		      <b>{{trend.name}}</b>
+		<body>
+	{% endfor %}
+</html>
+{% endautoescape %}
