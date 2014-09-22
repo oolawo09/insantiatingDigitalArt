@@ -1,4 +1,5 @@
 ---
+
 ---
 <!doctype html>
 <html>
@@ -18,17 +19,34 @@
     <div class="wrapper">
       <header>
         <h1>Insantiatingdigitalart</h1>
-        <p></p>
+        <p>
+            <ul>
+            {%for post in site.posts%}
+            <li>
+                <a href="{{post.url}}">{{post.title}}</a>
+                </li>
+                {% endfor %}
+                </ul>
+          </p>
 
         <p class="view"><a href="https://github.com/oolawo09/insantiatingDigitalArt">View the Project on GitHub <small>oolawo09/insantiatingDigitalArt</small></a></p>
       </header>
       <section>
         <h3>
 <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>the gist of it</h3>
-
+          
 <p>Documenting my journey as I explore and analyse digital art projects spanning large geographical spaces and touching the lives of a diverse subset of people. These will be projects that live on the web (inclusive of purely hardware based projects) and are accessible via all sorts of digital devices.
  </p>
-
+    <p>
+        <p>
+            {% for post in site.posts %}
+                <p>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+            {{ post.excerpt }}
+                </p>
+            {% endfor %}
+        </ul>
+        </p>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/oolawo09">oolawo09</a></p>
