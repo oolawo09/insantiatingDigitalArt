@@ -1,0 +1,74 @@
+[
+ {
+  "created_at": "2014-09-22T05:22:06Z", 
+  "trends": [
+   {
+    "url": "http://twitter.com/search?q=Leicester", 
+    "query": "Leicester", 
+    "name": "Leicester", 
+    "promoted_content": null
+   }, 
+   {
+    "url": "http://twitter.com/search?q=Lampard", 
+    "query": "Lampard", 
+    "name": "Lampard", 
+    "promoted_content": null
+   }, 
+   {
+    "url": "http://twitter.com/search?q=Chelsea", 
+    "query": "Chelsea", 
+    "name": "Chelsea", 
+    "promoted_content": null
+   }, 
+   {
+    "url": "http://twitter.com/search?q=WestGate", 
+    "query": "WestGate", 
+    "name": "WestGate", 
+    "promoted_content": null
+   }, 
+   {
+    "url": "http://twitter.com/search?q=%23GGMU", 
+    "query": "%23GGMU", 
+    "name": "#GGMU", 
+    "promoted_content": null
+   }, 
+   {
+    "url": "http://twitter.com/search?q=United", 
+    "query": "United", 
+    "name": "United", 
+    "promoted_content": null
+   }, 
+   {
+    "url": "http://twitter.com/search?q=Kenya", 
+    "query": "Kenya", 
+    "name": "Kenya", 
+    "promoted_content": null
+   }, 
+   {
+    "url": "http://twitter.com/search?q=Ozil", 
+    "query": "Ozil", 
+    "name": "Ozil", 
+    "promoted_content": null
+   }, 
+   {
+    "url": "http://twitter.com/search?q=%23Sikikasasa", 
+    "query": "%23Sikikasasa", 
+    "name": "#Sikikasasa", 
+    "promoted_content": null
+   }, 
+   {
+    "url": "http://twitter.com/search?q=%22Di+Maria%22", 
+    "query": "%22Di+Maria%22", 
+    "name": "Di Maria", 
+    "promoted_content": null
+   }
+  ], 
+  "as_of": "2014-09-22T05:31:42Z", 
+  "locations": [
+   {
+    "woeid": 1528488, 
+    "name": "Nairobi"
+   }
+  ]
+ }
+]

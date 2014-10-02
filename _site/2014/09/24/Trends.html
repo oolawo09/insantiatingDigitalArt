@@ -1,0 +1,40 @@
+
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        
+<p>the one titled: building my first twitter app.</p>
+        
+        <p>
+I pulled a one man hackathon this past Sunday night to build my first <a href= “http://twitter-trends-drawn.appspot.com/”>twitter trends app</a>. The app&#39;s user interface is very simple-- a list of Nairobi&#39;s trending Twitter topics. 
+        </p>
+
+        <p>
+I built the app on the <a href=”https://cloud.google.com/appengine/docs/python/”> Python Google App Engine </a>  platform and included the Python Twitter Tools package (installable by running the command &#39;pip install twitter&#39; on a mac terminal) because of the ease with which it allowed me to pull data from Twitter&#39;s stream API.  
+            
+Here's a helpful tutorial <a href=”http://nbviewer.ipython.org/github/ptwobrussell/Mining-the-Social-Web-2nd-Edition/blob/master/ipynb/Chapter%201%20-%20Mining%20Twitter.ipynb”> Mining the Social Web&#39; 2nd Edition</a> detailing the steps needed to use the said package to access Twitter&#39;s data. 
+
+            </p>
+        <p>
+Since Twitter implements OAuth 1.0A as its standard authentication mechanism, I needed to login to Twitter and <a href=”https://dev.twitter.com/apps”> create a twitter application</a>. After contructing MapsAndTrends, my first Twitter app,  I noted its primary identifiers necessary for an OAuth 1.0A workflow: consumer key&#44; consumer secret&#44; access token&#44; and access token secret. Once authentication was guaranteed, I wrote a simple python script to pull  trending data and display it. I would later integrate this script into a Google App Engine instance, to keep it alive in the cloud. 
+</p>
+        <p>
+The script&#44; <a href=”https://github.com/oolawo09/insantiatingDigitalArt/blob/master/twitterStream.py”>twitterStream.py</a>&#44; performed Oauth authentication&#44; loaded the entire world&#44; Kenya and the USA&#39;s <a href=”https://developer.yahoo.com/geo/geoplanet/guide/concepts.html”> WOEIDs-- Where On Earth Identifiers--</a>&#44; used them to pull trending data and printed this data out to standard output. 
+            </p>
+        <p>
+
+The Google App Engine framework basically hosted twitterStream.py within a <a href=”https://cloud.google.com/appengine/docs/python/gettingstartedpython27/usingwebapp”>webapp2 application</a> that handled all the code I&#39;d need for the <a href=””>WSGI (Web Server Gateway Interface)</a>. I then extended twitterStream.py to write the trending data out to the app&#39;s home page. 
+</p>
+        <p>
+The next step for this project will be to visualise the data and locate it on a map. Here I&#39;ll select a data visualisation library to leverage. As concerns locating the data&#44; I&#39;ve already decided on <a href=”https://developers.google.com/maps/web/”>Google Map&#39;s javascript Web API</a> as my mapping library of choice because it&#39;s properly documented and easy to use. This brings me to my first concern of the project: all web data visualisation APIs I&#39;ve come across thus far are in javascript as well.  
+</p>
+        <p>
+This has pushed me to look at a couple of Node.js modules for an alternative platform on which to build my web app. I've came across <a href=”http://phonegap.com/”> phonegap</a> and <a href=”http://ionicframework.com/”>ionic</a>. These two frameworks enable developers to build web apps that can be compiled into  downloadable mobile phone apps on iOS&#44; Android&reg;&#44; Windows&copy; Phone&#44; Blackberry&copy; and webOS platforms whereby they&#39;ll run natively. 
+</p>
+        <p>
+This would make the project more accessible to mobile phone users while easing the work of integrating javascript libraries into it. 
+            </p>
+</body>
+        </html>
