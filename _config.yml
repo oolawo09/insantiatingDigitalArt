@@ -3,6 +3,5 @@ github: [Repository metadata]
 safe: true
 lsi: false
 
-permalink: /_posts/:year/:month/:day/:title.html
-
+baseurl: http://oolawo09.github.io/insantiatingDigitalArt
 
